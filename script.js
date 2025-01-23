@@ -37,6 +37,7 @@ let highScore = localStorage.getItem('highScore') || 0; // Uložený rekord z lo
 
 // Detekce stisku kláves pro změnu směru
 document.addEventListener('keydown', event => {
+  console.log
   // Změna směru podle šipky, pokud nový směr není opačný aktuálnímu
   if (event.key === 'ArrowUp' && direction !== 'DOWN') direction = 'UP';
   if (event.key === 'ArrowDown' && direction !== 'UP') direction = 'DOWN';
